@@ -19,7 +19,7 @@ body{
 .App{
   margin: auto;
   box-sizing: border-box;
-  
+ 
 }
 nav{
   padding: 2rem;
@@ -40,6 +40,8 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 90%;
+  margin: auto;
 }
 
 .icon{
@@ -192,4 +194,5 @@ section {
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur( 0.0px );
 }
+
 

@@ -1,9 +1,8 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import CopyCSS from './Components/CopyCSS';
 import FontFamily from './Components/FontFamily';
 import InputBar from './Components/InputBar';
 import TextArea from './Components/TextArea';
-
 
 function App() {
 
@@ -18,13 +17,13 @@ function App() {
         <h1>FONT EXPERIMENTS</h1>
       </nav>
       <InputBar
-        setInp={setInp}
-        color={color}
-        setColor={setColor} />
+          setInp={setInp}
+          color={color}
+          setColor={setColor} />
       
       <main>
-        <h2>Font Family & Font Size</h2>
-        <FontFamily
+          <h2>Font Family & Font Size</h2>
+          <FontFamily
           selectFamily = {selectFamily}
           setSelectFamily={setSelectFamily}
           fontSize={fontSize}
@@ -32,19 +31,18 @@ function App() {
       </main>
 
       <section>
-        <TextArea
+          <TextArea
           inp = {inp}
           selectFamily={selectFamily}
           fontSize={fontSize}
           color = {color}
-        />
-        <CopyCSS
+          />
+          <CopyCSS
           color = {color}
           selectFamily={selectFamily}
           fontSize = {fontSize}
-        />
+          />
       </section>
-    
     </div>
   );
 }
